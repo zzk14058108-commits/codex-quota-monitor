@@ -1,5 +1,5 @@
 {
-  "package_version": "1.6.1-share.1",
+  "package_version": "1.6.1-share.2",
   "verified_core_unchanged": true,
   "isolated_tests_passed": 72,
   "powershell_syntax_passed": true,
@@ -13,5 +13,8 @@
   "live_quota_injection_performed_during_packaging": false,
   "sender_private_data_scan_passed": true,
   "archive_contents_and_crc_checked_by_builder": true,
-  "generated_at": "2026-10-26T18:41:52.499424+08:00"
+  "generated_at": "2026-10-26T19:13:20.850299+08:00",
+  "doctor_uses_installed_configuration": true,
+  "doctor_installed_configuration_regression_cases_passed": 3,
+  "private_data_audit_of_public_history_passed": true
 }

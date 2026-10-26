@@ -37,7 +37,7 @@ $runtime=[ordered]@{codex_exe=$CodexExe;codex_home=$doctor.details.codex_home;py
 # An empty codex_exe preserves automatic executable discovery across normal app updates.
 [IO.File]::WriteAllText((Join-Path $target 'runtime.json'),($runtime | ConvertTo-Json),[Text.UTF8Encoding]::new($false))
 $arguments='-B -u "'+(Join-Path $target 'launcher.py')+'" --home "'+$target+'"'
-$receipt=[ordered]@{product='CodexQuotaMonitor.Share';version='1.6.1-share.1';install_root=$target;python_exe=$python.python;pythonw_exe=$python.pythonw;task_name='CodexQuotaMonitorPortable';task_arguments=$arguments;installed_at=(Get-Date -Format o)}
+$receipt=[ordered]@{product='CodexQuotaMonitor.Share';version='1.6.1-share.2';install_root=$target;python_exe=$python.python;pythonw_exe=$python.pythonw;task_name='CodexQuotaMonitorPortable';task_arguments=$arguments;installed_at=(Get-Date -Format o)}
 [IO.File]::WriteAllText((Join-Path $target 'install.json'),($receipt | ConvertTo-Json),[Text.UTF8Encoding]::new($false))
 $action=New-ScheduledTaskAction -Execute $python.pythonw -Argument $arguments -WorkingDirectory $target
 $trigger=New-ScheduledTaskTrigger -AtLogOn -User ([Security.Principal.WindowsIdentity]::GetCurrent().Name)
