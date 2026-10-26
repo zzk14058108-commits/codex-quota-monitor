@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+test-work/
+runtime.json
+install.json
+config.json
+status.json
+events.jsonl*
+reader.stderr*
+paused-tasks.json
+resume-receipts/
+STOP_MONITOR.request
+*.zip

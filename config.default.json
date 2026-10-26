@@ -1,0 +1,11 @@
+{
+  "threshold_percent": 5,
+  "quota_poll_seconds": 2,
+  "process_scan_seconds": 0.25,
+  "max_quota_age_seconds": 20,
+  "quota_recovery": "fresh explicit 300-minute AND 10080-minute windows above5; resume only monitor-paused work in the SAME visible desktop chat",
+  "unknown_quota_policy": "report_only_never_stop",
+  "enforcement_policy": "interrupt_visible_task_only_never_terminate_app",
+  "auto_resume_monitor_paused_tasks": true,
+  "auto_resume_policy": "fresh-five-hour-same-visible-v1"
+}

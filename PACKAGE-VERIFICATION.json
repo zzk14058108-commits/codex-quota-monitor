@@ -1,0 +1,17 @@
+{
+  "package_version": "1.6.1-share.1",
+  "verified_core_unchanged": true,
+  "isolated_tests_passed": 72,
+  "powershell_syntax_passed": true,
+  "unicode_and_space_path_preflight_passed": true,
+  "duplicate_install_refused": true,
+  "flat_install_layout_readonly_checks_passed": true,
+  "live_readonly_account_and_desktop_probe_passed": true,
+  "installer_manage_uninstaller_simulated_API_checks_passed": true,
+  "real_second_monitor_installed_during_packaging": false,
+  "second_physical_machine_tested": false,
+  "live_quota_injection_performed_during_packaging": false,
+  "sender_private_data_scan_passed": true,
+  "archive_contents_and_crc_checked_by_builder": true,
+  "generated_at": "2026-10-26T18:41:52.499424+08:00"
+}
